@@ -9,8 +9,8 @@ import { createTodo } from '@/actions/todoAction'
 
 const AddTodo = () => {
   return (
-    <Form action={createTodo} className='max-w-5xl w-full mx-auto'>
-          <div className='flex'>
+    <Form action={createTodo} className='w-full  mx-auto'>
+          <div className='flex w-full'>
                <Input name='input' type='text' placeholder='Add Todo...' />
                 <Button type='submit' text="Add"/>
           </div>

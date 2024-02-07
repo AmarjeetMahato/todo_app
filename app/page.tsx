@@ -26,13 +26,13 @@ export default async function Home() {
     console.log(data);
     
   return (
-      <main className="w-screen py-20 gap-y-4  flex justify-center flex-col items-center">
+      <main className="w-screen py-20 gap-y-4   flex justify-center flex-col items-center">
           <span className="text-3xl font-extrabold uppercase">To-do-App</span>
           <h1 className="text-3xl font-extrabold">Next 14 <span className=" text-rose-500">Server Action</span></h1>
-          <div className="flex items-center justify-center flex-col ">
-                     <AddTodo/>
+          <div className="flex items-center justify-center flex-col w-[1000px] ">
 
-                     <div className="mt-10 flex-col flex gap-5 items-center justify-center w-full">
+                     <AddTodo/>
+                     <div className="mt-10 flex-col flex w-full gap-5 items-center justify-center ">
                           {data?.map((todo, id)=>(
                                <div key={id} className="w-full shadow-md">
                                    <Todo
